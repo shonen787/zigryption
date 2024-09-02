@@ -1,11 +1,11 @@
 const std = @import("std");
 const testing = std.testing;
 
-const Rc4Errors = error{
+pub const Rc4Errors = error{
     ERROR_INVALID_PARAMETER,
 };
 
-const Rc4Context = struct {
+pub const Rc4Context = struct {
     j: u8,
     i: u8,
     s: [256]u8,
