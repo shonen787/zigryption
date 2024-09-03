@@ -11,7 +11,7 @@ pub const Rc4Context = struct {
     s: [256]u8,
 
     pub fn rc4Init(self: *Rc4Context, key: *const u8, length: usize) !void {
-        if (self == null or key == null) {
+        if (key == null) {
             return Rc4Errors.ERROR_INVALID_PARAMETER;
         }
 
