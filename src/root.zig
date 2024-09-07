@@ -1,4 +1,5 @@
 const std = @import("std");
+pub const obf = @import("obfuscation.zig");
 
 pub const Rc4Errors = error{
     ERROR_INVALID_PARAMETER,
